@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Python script (`parser.py`) parses web server log files to help identify potential non-human (bot) traffic and summarize request patterns. It reads a specified log file (default `sample-log.log`).
+Simple Python script (`parser.py`) parses web server log files to help identify potential non-human (bot) traffic and summarize request patterns at a high level. It reads a specified log file (default `sample-log.log`).
 
 This specific repo contains:
 
