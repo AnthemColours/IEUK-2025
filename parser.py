@@ -37,7 +37,7 @@ def req_resources():
     
     return resources
 
-# Orders dictionary in non-decreasing order by value
+# Orders dictionary in descending order by value
 def reverse_sort_dict_by_val(dict):
     return sorted(dict.items(), key=lambda x: x[1], reverse=True)
 
