@@ -53,7 +53,7 @@ def collate_suspicious_logs(ip):
             if parts[0] == ip:
                 sus.write(line)
 
-
+# Used to create a .txt file containing all successful requests from IP addresses deemed suspicious
 def collate_successful_suspicious_logs(file_list):
     for file in file_list:
         with open(file, 'r') as f, open("successful_suspicious.txt", 'a') as sus:
@@ -72,7 +72,6 @@ def main():
 
     for entry in reverse_sort_dict_by_val(ip_list)[:20]:
         print(f"{entry[0]}: {entry[1]}")
-        collate_suspicious_logs(entry[0])
 
     print("-------------------------------All Clients-----------------------------------------------------")
 
